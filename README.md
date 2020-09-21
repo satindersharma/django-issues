@@ -22,7 +22,7 @@ i.e import from generic not generic.edit
 # migrate migrations errors
 assume your app name is posts
 
-'''
+'''shell
 delete migrations folder
 python manage.py makemigrations posts
 python manage.py migrate --fake posts zero
