@@ -15,3 +15,16 @@ the simplei solution to this problem is import in the following way
 from django.views.generic import CreateView, DeleteView, UpdateView, DetailView, ListView
 
 i.e import from generic not generic.edit
+
+
+
+
+# migrate migrations errors
+assume your app name is posts
+
+'''
+delete migrations folder
+python manage.py makemigrations posts
+python manage.py migrate --fake posts zero
+python manage.py migrate posts
+'''
