@@ -28,12 +28,28 @@ i.e import from generic not generic.edit
 # migrate migrations errors
 assume your app name is posts
 
+first try:
+
+
+```bash
+python manage.py migrate --fake-initial posts zero
+python manage.py migrate posts
+```
+
+if above won't work
 
 ```bash
 delete migrations folder
 python manage.py makemigrations posts
 python manage.py migrate --fake posts zero
 python manage.py migrate posts
-
-
 ```
+
+
+
+
+
+
+
+
+
