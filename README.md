@@ -49,7 +49,12 @@ python manage.py migrate posts
 
 
 
+<form action="#" can cause error to the NextUrlMixins
 
+as it redirect to /# instead of /
+
+
+so remove has in the form action of the page.
 
 
 
