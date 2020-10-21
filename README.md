@@ -28,6 +28,14 @@ i.e import from generic not generic.edit
 # migrate migrations errors
 assume your app name is posts
 
+
+First and formost:
+delete migration folder
+and migrate by this command
+```bash
+python manage.py migrate --run-syncdb erpapp
+```
+
 first try:
 
 
