@@ -65,4 +65,9 @@ as it redirect to /# instead of /
 so remove has in the form action of the page.
 
 
-
+##### 'str' object is not a mapping
+pass name as named argument
+i.e
+path('abc/',Abc.as_view(),name='abc'),
+instead of
+path('abc/',Abc.as_view(),'abc'),
