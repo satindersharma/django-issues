@@ -71,3 +71,9 @@ i.e
 path('abc/',Abc.as_view(),name='abc'),
 instead of
 path('abc/',Abc.as_view(),'abc'),
+
+
+
+# adding js files to django admin
+
+<a href="https://github.com/satindersharma/django-issues/tree/master/django-admin-js-issues" target="_blank"><h2>Adding js files to django admin - click here</h2></a>
