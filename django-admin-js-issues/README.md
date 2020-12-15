@@ -1,4 +1,4 @@
-# TO attach a js file in django admin is a bit tricky
+# To attach a js file in django admin is a bit tricky
 
 first you need ot overwrite the admin templates
 
@@ -32,7 +32,9 @@ var jQuery = django.jQuery
 ```
 
 ## Here is the changed file
+
 <a href="https://github.com/satindersharma/django-issues/blob/master/django-admin-js-issues/django-jquery-confirm.js" target="_blank"><h4>jquery-confirm.js</h4></a>
+
 <a href="https://github.com/satindersharma/django-issues/blob/master/django-admin-js-issues/django-select2.js" target="_blank"><h4>select2.js</h4></a>
 
 # now overwrite the admin html to attach js file to it
@@ -43,4 +45,5 @@ here it link of sample file
 for example : tepmplate/admin/change_form.html
 
 ## Here is the changed file
+
 <a href="https://github.com/satindersharma/django-issues/blob/master/django-admin-js-issues/admin/change_form.html" target="_blank"><h4>change_form.html</h4></a>
