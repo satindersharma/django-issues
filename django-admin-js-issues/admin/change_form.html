@@ -1,0 +1,58 @@
+{% extends 'admin/change_form.html' %}
+{% load static %}
+{% block admin_change_form_document_ready %}
+{{ block.super }}
+
+{% block extrahead %}
+{{block.super}}
+<style>
+    .select2-container {
+        z-index: 99999999;
+    }
+
+    #address-popup {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    @media (max-width: 991.98px) {
+        #address-popup {
+            display: grid;
+            gap: 20px;
+        }
+
+        #address-popup select {
+            width: 38vw;
+            padding: 0px 38vw;
+        }
+    }
+
+    #address-popup select {
+        width: 18vw;
+        margin: 0 5px;
+    }
+</style>
+{% endblock extrahead %}
+
+{% block extrastyle %}
+{{ block.super }}
+<!-- jQuery Confirm css -->
+<link href="{% static 'assets/plugins/jquery-confirm/css/jquery-confirm.css' %}" rel="stylesheet" type="text/css">
+<!-- Select2 css -->
+<link href="{% static 'assets/plugins/select2/select2.min.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'assets/plugins/select2/select2-bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+
+{% endblock extrastyle %}
+
+
+{% block content %}
+
+<input type="button" id="add-address-button" value="add button"></input>
+
+{{ block.super }}
+{% endblock content %}
+<script src="{% static 'js/adminaddr.js' %}"></script>
+<script src="{% static 'js/django-jquery-confirm.js' %}"></script>
+<script src="{% static 'js/django-select2.js' %}"></script>
+{% endblock admin_change_form_document_ready %}
