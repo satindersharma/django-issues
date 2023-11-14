@@ -34,8 +34,8 @@ delete migration folder
 and migrate by this command
 ```bash
 python manage.py migrate --run-syncdb erpapp
-python manage.py makemigrations
-python manage.py migrate --fake
+python manage.py makemigrations erpapp
+python manage.py migrate erpapp --fake
 
 ```
 
